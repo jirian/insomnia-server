@@ -7,7 +7,7 @@ const srp = require("srp-js")
 app.use(bodyParser.json())
 
 app.post('/notification', (req, res) => {
-    res.send('Hello World!');
+    res.json({ "Hello": "world" });
 });
 
 function makeid(length) {
